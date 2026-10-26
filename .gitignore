@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Env
+.env
+.env.local
+
+# Data + models (heavy, not for git)
+data/raw/
+data/processed/
+models/
+!models/.gitkeep
+
+# Logs (keep folder, not contents)
+logs/*.jsonl
+logs/*.log
+!logs/.gitkeep
+
+# Outputs: ignore generated briefs / runs, but keep eval artefacts in the repo
+outputs/market_brief_*.md
+outputs/run_*.json
+!outputs/.gitkeep
+!outputs/eval_*.png
+!outputs/eval_*.txt
+!outputs/eval_*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Hugging Face cache (if local)
+.cache/
